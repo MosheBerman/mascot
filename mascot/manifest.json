@@ -1,0 +1,76 @@
+{
+
+	/* Metadata, required by chrome. */
+
+	"manifest_version" : 2,	//	Always 2
+	"name" : "Mascot",		//	Our plugin's name
+	"version" : "0.1",		//	Our plugin's version
+
+	/* 
+
+		The scripts our plugin is comprised of.
+		Each dictionary contains the scripts and stylesheets
+		that are applied to a given page. Said "given page" 
+		is any page that matches the slugs provided in the 
+		'matches' array. 
+	*/
+
+	"content_scripts" : [
+
+		/* 
+		 * 	This first set matches any CUNYFirst URL.
+		 *	Here we load the global JS and CSS. 
+		 *	I assume we'll want to inject our navigation here.
+		 */
+
+		{
+		"matches" : ["*://*.cunyfirst.cuny.edu/*"],
+		"css" : ["css/global.css"],
+		"js" : ["js/global.js", "js/navigation.js", "js/notification-center.js"]
+		},
+
+		/* 
+		 * 	This second set matches the landing page.
+		 *	In addition to the global scripts, we'll want to 
+		 *	redo the horrid alerts, and perhaps the links. 
+		 *	I did a mockup of this page, which should be saved
+		 *	as a PNG in the root directory.
+		 */
+
+		{
+			"matches" : ["*://*.cunyfirst.cuny.edu/psp/cnyepprd/EMPLOYEE/EMPL/h/*"],
+			"css": ["css/landing.css"],
+			"js" : ["js/landingUI.js"]
+		},
+
+		/*
+		 *	If we want to redesign the login page, and make it actually work
+		 *	on Safari for OS X, here's where to do it. 
+		 */
+
+		{
+			"matches" : ["https://home.cunyfirst.cuny.edu/oam/Portal_Login1.html"],
+			"css" : ["css/login.css"],
+			"js" : ["js/loginUI.js"]
+		}
+	],
+
+	/*
+		Any resources that aren't JavaScript must be
+		whitelisted here for cross site requests.
+		Use a relative URL, assuming we're in the plugin's 
+		root directory.
+	*/
+
+	"web_accessible_resources": [
+
+	/* Images */
+   	"img/logo_wide_small.png", 
+
+    /* CSS Files */
+    "css/global.css",
+    "css/landing.css",
+    "css/login.css",
+    "css/nav.css"
+  ]
+}
