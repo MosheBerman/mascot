@@ -1,0 +1,27 @@
+{
+	"manifest_version" : 2,
+	"name" : "Mascot",
+	"version" : "1.0",
+
+	"content_scripts" : [{
+		"matches" : ["*://*.home.cunyfirst.cuny.edu/*"],
+		"js" : ["js/global.js"]
+		}, 
+		{
+			"matches" : ["*://*.home.cunyfirst.cuny.edu/psp/cnyepprd/EMPLOYEE/EMPL/h/*"],
+			"css": ["css/landing.css"],
+			"js" : ["js/landingUI.js"]
+		},
+		{
+			"matches" : ["https://home.cunyfirst.cuny.edu/oam/Portal_Login1.html"],
+			"css" : ["css/login.css"],
+			"js" : ["js/loginUI.js"]
+		}
+	],
+	"web_accessible_resources": [
+    "img/bg.png",
+    "img/bg@2x.png",
+    "css/landing.css",
+    "img/logo_wide_small.png"
+  ]
+}
