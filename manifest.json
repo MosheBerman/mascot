@@ -4,11 +4,12 @@
 	"version" : "1.0",
 
 	"content_scripts" : [{
-		"matches" : ["*://*.home.cunyfirst.cuny.edu/*"],
-		"js" : ["js/global.js"]
+		"matches" : ["*://*.cunyfirst.cuny.edu/*"],
+		"css" : ["css/global.css"],
+		"js" : ["js/global.js", "js/navigation.js", "js/notifications-center.js"]
 		}, 
 		{
-			"matches" : ["*://*.home.cunyfirst.cuny.edu/psp/cnyepprd/EMPLOYEE/EMPL/h/*"],
+			"matches" : ["*://*.cunyfirst.cuny.edu/psp/cnyepprd/EMPLOYEE/EMPL/h/*"],
 			"css": ["css/landing.css"],
 			"js" : ["js/landingUI.js"]
 		},
@@ -19,9 +20,13 @@
 		}
 	],
 	"web_accessible_resources": [
-    "img/bg.png",
-    "img/bg@2x.png",
+	/* Images */
+   	"img/logo_wide_small.png", 
+
+    /* CSS Files */
+    "css/global.css",
     "css/landing.css",
-    "img/logo_wide_small.png"
+    "css/login.css",
+    "css/nav.css"
   ]
 }

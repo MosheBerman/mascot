@@ -1,0 +1,24 @@
+/* A global, pagewide wrapper */
+
+#students-first-wrapper {
+	font-family: "Helvetica", "helvetica", sans-serif !important;
+}
+
+/* A global navbar for each school. */
+#students-first-navbar {
+	background-color: #00aeef;
+	color: #ffffff;
+	font-size: 15pt;
+}
+
+/* The notification center UI for the landing page*/
+#students-first-notification-center {
+	background-color: #face01;
+	color: #ffffff;
+	font-size: 10pt;	
+}
+
+/* Most wrapper divs in Students First have rounded corners */
+.students-first-round-corner {
+	border-radius: 15px;
+}

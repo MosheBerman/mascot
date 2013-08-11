@@ -5,6 +5,12 @@ window.onload = function() {
 };
 
 //
+//	Some globals
+//
+
+var panelContents = [];
+
+//
 //	The entry point for our script
 //
 
@@ -12,7 +18,6 @@ function main()
 {
 	pullContentFromPanels();
 	renderLogo();
-	renderNav();
 	renderNewPanels();
 }
 
@@ -23,6 +28,10 @@ function main()
 function pullContentFromPanels()
 {
 	var oldPanels = document.querySelectorAll('*[id^="ptpgltbody_row_"]');
+
+	for (var i = 0; i < oldPanels.length; i++) {
+		var panel = oldPanels[i];
+	};
 }
 
 //	Renders the logo
@@ -30,17 +39,6 @@ function pullContentFromPanels()
 function renderLogo() 
 {
 	document.getElementsByClassName('FIRSTLOGO')[0].src = "chrome-extension://nhhahdgmmeapkammmkhanjhpnhpolebm/img/logo_wide_small.png";
-
-
-}
-	
-//
-//	Renders the navigation bar
-//
-
-function renderNav() 
-{
-
 }
 
 //
