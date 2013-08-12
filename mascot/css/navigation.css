@@ -1,0 +1,8 @@
+/* A global navbar for each school. */
+#students-first-navbar {
+	background-color: #00aeef;
+	color: #ffffff;
+	font-size: 15pt;
+	margin: 15px;
+	padding: 15px;
+}
