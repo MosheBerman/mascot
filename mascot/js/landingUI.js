@@ -1,14 +1,9 @@
-console.log("Loaded the landing UI module."); 	
-
-window.onload = function() {
-	main();
-};
 
 //
 //	Some globals
 //
 
-var panelContents = [];
+var notifications = [];
 
 //
 //	The entry point for our script
@@ -16,8 +11,10 @@ var panelContents = [];
 
 function main() 
 {
+
+	console.log("Loaded the landing UI module."); 	
+
 	pullContentFromPanels();
-	renderLogo();
 	renderNewPanels();
 }
 
@@ -27,19 +24,27 @@ function main()
 
 function pullContentFromPanels()
 {
-	var oldPanels = document.querySelectorAll('*[id^="ptpgltbody_row_"]');
 
-	for (var i = 0; i < oldPanels.length; i++) {
-		var panel = oldPanels[i];
+	var messages = document.getElementsByClassName('MsoNormal');
+
+	for (var j = 0; j < messages.length; j++) {
+		notifications.push(messages[j].innerText);
 	};
+
+
+
+	console.log(notifications);	
+
 }
 
 //	Renders the logo
 
 function renderLogo() 
 {
-	document.getElementsByClassName('FIRSTLOGO')[0].src = "chrome-extension://nhhahdgmmeapkammmkhanjhpnhpolebm/img/logo_wide_small.png";
+	document.getElementsByClassName('FIRSTLOGO')[0].src = "chrome-extension://" + extensionID + "/img/logo_wide_small.png";
 }
+
+
 
 //
 //	Render the panels as we want them to be
@@ -48,4 +53,28 @@ function renderLogo()
 function renderNewPanels() 
 {
 
+	//	A wrapper
+	var wrapper = document.createElement("div");
+	wrapper.id = "students-first-wrapper";
+
+	//	A navbar		
+	var navBar = generateNavBar();
+
+	//	Remove child node
+	while(document.body.childNodes.length > 0) {
+		document.body.removeChild(document.body.childNodes[0]);
+	}
+
+
+	wrapper.appendChild(navBar);
+
+	//	Install it all into the body
+	document.body.appendChild(wrapper);
+
 }
+
+//
+//	Call main
+//
+
+main();
