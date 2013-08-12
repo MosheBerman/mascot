@@ -1,0 +1,25 @@
+x BAR - Baruch College
+x BMC - Borough of Manhattan CC
+x BCC - Bronx Community College
+J BKL - Brooklyn College
+G LAW - CUNY School of Law
+x CTY - City College
+J CSI - College of Staten Island
+J HOS - Hostos Community College
+x HTR - Hunter College
+x JJC - John Jay College
+x KCC - Kingsborough Community College
+J LAG - LaGuardia Community College
+J LEH - Lehman College
+x MEC - Medgar Evers College
+J NYT - NYC College of Technology
+G QNS - Queens College
+G QCC - Queensborough Community College
+J NCC - Stella and Charles Guttman Community College
+J GRD - The Graduate Center
+G YRK - York College
+
+Pattern 1: 
+
+https://home.cunyfirst.cuny.edu/cs/cnyepprd/cache850/CU_COLLEGE_{ID}_BANNER_1.JPG
+https://home.cunyfirst.cuny.edu/cs/cnyepprd/cache850/CU_COLLEGE_{ID}_BANNER_1.gif
