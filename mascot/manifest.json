@@ -1,7 +1,7 @@
 {
 	"manifest_version" : 2,	
 	"name" : "Mascot",		
-	"version" : "0.1.2",	
+	"version" : "0.2.1",	
 
 	"icons": { "16": "icon-16.png",
     	       "48": "icon-48.png",
@@ -12,19 +12,19 @@
 	"content_scripts" : [
 {
 		"matches" : ["*://*.cunyfirst.cuny.edu/*"],
-		"css" : ["css/global.css", "css/navigation.css"],
-		"js" : ["js/global.js", "js/logger.js", "js/navigation.js", "js/notification-center.js"]
+		"css" : ["css/global.css", "css/components/navigation-bar.css", "css/components/notification-center.css"],
+		"js" : ["js/util/main.js", "js/util/logger.js", "js/ui/components/navigation-bar.js", "js/ui/components/notification-center.js"]
 		},
 		{
 			"matches" : ["*://*.cunyfirst.cuny.edu/psp/cnyepprd/EMPLOYEE/EMPL/h/*"],
-			"css": ["css/landing.css"],
-			"js" : ["js/landingUI.js"]
+			"css": ["css/pages/landing.css"],
+			"js" : ["js/ui/pages/landing.js"]
 		},
 
 		{
 			"matches" : ["https://home.cunyfirst.cuny.edu/oam/Portal_Login1.html"],
-			"css" : ["css/login.css"],
-			"js" : ["js/loginUI.js"]
+			"css" : ["css/pages/login.css"],
+			"js" : ["js/ui/pages/login.js"]
 		}		
 	],
 
@@ -34,8 +34,9 @@
 	   	"img/studentsfirst-banner.png", 
 
 	    "css/global.css",
-	    "css/landing.css",
-	    "css/login.css",
-	    "css/nav.css"
+	    "css/pages/landing.css",
+	    "css/pages/login.css",
+	    "css/components/navigation-bar.css",
+	    "css/components/notification-center.css"
   ]
 }

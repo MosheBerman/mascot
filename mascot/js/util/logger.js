@@ -6,5 +6,5 @@
  */
 
 function log(message) {
-	consoler.log(message);
+	console.log(message);
 }

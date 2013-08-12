@@ -1,0 +1,50 @@
+/* A global navbar for each school. */
+#students-first-notification-center {
+	background-color: #FACE01;
+	color: #ffffff;
+	font-size: 15pt;
+	margin: 0 auto;
+	margin-top: -15px;
+	padding: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	height: 15px;
+	text-align:  center;
+	width: 800px;
+	font-size: 13px;
+}
+
+#students-first-notification-center:hover {
+	height: auto;
+}
+
+#students-first-notification-center .students-first-notication-center-message {
+	color: #FFFFFF;
+	font-family: "Helvetica", sans-serif;
+	border-bottom: 1px #ffffff solid;
+	width: 794px;
+	padding: 5px;
+	text-align: left;
+	padding: 5px;
+	min-height: 15px;
+	display: none;
+}
+
+#students-first-notification-center:hover .students-first-notication-center-message {
+	display: block;
+}
+
+#students-first-notification-center-handle {
+	display: block;
+	margin: 2px auto;
+	height: 5px;
+	width: 50px;
+	background-color: #ffffff;
+	bottom: 3px;
+	top: 3px;
+	border-radius: 2px;
+}
+
+

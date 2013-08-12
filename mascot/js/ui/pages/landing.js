@@ -30,11 +30,6 @@ function pullContentFromPanels()
 	for (var j = 0; j < messages.length; j++) {
 		notifications.push(messages[j].innerText);
 	};
-
-
-
-	console.log(notifications);	
-
 }
 
 //	Renders the logo
@@ -58,7 +53,8 @@ function renderNewPanels()
 	wrapper.id = "students-first-wrapper";
 
 	//	A navbar		
-	var navBar = generateNavBar();
+	var navBar = sharedNavBar();
+	var notificationCenter = sharedNotificationCenter();
 
 	//	Remove child node
 	while(document.body.childNodes.length > 0) {
@@ -67,6 +63,7 @@ function renderNewPanels()
 
 
 	wrapper.appendChild(navBar);
+	wrapper.appendChild(notificationCenter);
 
 	//	Install it all into the body
 	document.body.appendChild(wrapper);
