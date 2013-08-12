@@ -5,12 +5,12 @@
 	font-size: 15pt;
 	margin: 0 auto;
 	margin-top: -15px;
-	padding: 0;
+	padding: 2px;
 	border-top-left-radius: 0;
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 8px;
 	border-bottom-left-radius: 8px;
-	height: 15px;
+	height: 10px;
 	text-align:  center;
 	width: 800px;
 	font-size: 13px;
@@ -23,8 +23,8 @@
 #students-first-notification-center .students-first-notication-center-message {
 	color: #FFFFFF;
 	font-family: "Helvetica", sans-serif;
-	border-bottom: 1px #ffffff solid;
-	width: 794px;
+	border-bottom: 1px #ffe985 solid;
+	width: 786px;
 	padding: 5px;
 	text-align: left;
 	padding: 5px;
@@ -41,7 +41,7 @@
 	margin: 2px auto;
 	height: 5px;
 	width: 50px;
-	background-color: #ffffff;
+	background-color: #ffe985;
 	bottom: 3px;
 	top: 3px;
 	border-radius: 2px;
