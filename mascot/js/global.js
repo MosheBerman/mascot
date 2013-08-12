@@ -1,10 +1,18 @@
-console.log("Loaded global JS file.");
-
 //
 //	define a jQuery-like query object
 //
 
 var $ = document.querySelectorAll;
+
+//	Store Extension ID
+//var extensionID = "agcpnlpfdfbcimknkpnclcicmcomklpo";
+
+//	Sandbox ID
+var extensionID = "agcpnlpfdfbcimknkpnclcicmcomklpo";
+
+//
+//	Enter the script
+//
 
 window.onload = function(){
 	main();
@@ -16,8 +24,21 @@ window.onload = function(){
 
 function main() 
 {
+
+	console.log("Loaded global JS file.");		
+	
 	wrapBodyWithWrapper();
-	renderNav();
+
+	try
+	{
+		loginMain();
+	}
+	catch (e)
+	{
+		console.log("Cannot run login main, as we're not on the login page.");
+	}
+
+	console.log("Executed global JS file.");	
 }
 
 //

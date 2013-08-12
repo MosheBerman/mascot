@@ -4,13 +4,6 @@
 	font-family: "Helvetica", "helvetica", sans-serif !important;
 }
 
-/* A global navbar for each school. */
-#students-first-navbar {
-	background-color: #00aeef;
-	color: #ffffff;
-	font-size: 15pt;
-}
-
 /* The notification center UI for the landing page*/
 #students-first-notification-center {
 	background-color: #face01;
