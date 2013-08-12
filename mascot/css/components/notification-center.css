@@ -25,6 +25,7 @@
 
 #students-first-notification-center #students-first-notification-wrapper {
 	height: 0;
+	transition: height 0.3s;	
 	overflow: hidden;
 }
 
