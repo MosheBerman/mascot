@@ -28,7 +28,14 @@ function pullContentFromPanels()
 	var messages = document.getElementsByClassName('MsoNormal');
 
 	for (var j = 0; j < messages.length; j++) {
-		notifications.push(messages[j].innerText.trim());
+
+		var text = (messages[j].innerText).trim();
+
+		if (text === "") {
+			continue;
+		}
+
+		notifications.push(text);		
 	};
 }
 

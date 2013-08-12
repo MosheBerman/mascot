@@ -14,37 +14,55 @@
 	text-align:  center;
 	width: 800px;
 	font-size: 13px;
+	transition: height 0.3s;
+	z-index: 2;
 }
 
+/* Hovering over notification center opens it */
 #students-first-notification-center:hover {
-	height: auto;
+	height: 320px;
 }
 
+#students-first-notification-center #students-first-notification-wrapper {
+	height: 0;
+	overflow: hidden;
+}
+
+#students-first-notification-center:hover #students-first-notification-wrapper {
+	height: 310;
+	overflow: auto;
+}
+
+/* Headers have bottom borders */
+#students-first-notification-center .students-first-notication-center-header {
+	border-bottom: 1px solid #e9c001;
+}
+
+/* Style the messages */
 #students-first-notification-center .students-first-notication-center-message {
-	color: #FFFFFF;
+	color: #9d8100;
 	font-family: "Helvetica", sans-serif;
-	border-bottom: 1px #ffe985 solid;
-	width: 786px;
+	width: 790px;
 	padding: 5px;
 	text-align: left;
 	padding: 5px;
 	min-height: 15px;
-	display: none;
+	opacity: 0.0;
+	transition: opacity 0.4s;		
 }
 
+/* Fade the messages in */
 #students-first-notification-center:hover .students-first-notication-center-message {
-	display: block;
+	opacity: 1.0;
 }
 
+/* The handle div. */
 #students-first-notification-center-handle {
 	display: block;
 	margin: 2px auto;
 	height: 5px;
 	width: 50px;
-	background-color: #ffe985;
-	bottom: 3px;
-	top: 3px;
+	background-color: #e9c001;
 	border-radius: 2px;
 }
-
 
