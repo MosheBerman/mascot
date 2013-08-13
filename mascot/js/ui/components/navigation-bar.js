@@ -5,17 +5,9 @@
  *	This script builds out a navigation component.
  *
  ****/
-
-/*
- *	URLs 
- */
-
-var logoutURL = "https://home.cunyfirst.cuny.edu/psp/cnyepprd/EMPLOYEE/EMPL/?cmd=logout";
-
-var loginURL = "https://home.cunyfirst.cuny.edu/oam/Portal_Login1.html";
-
+ 
 //
-//
+//	Shows the modal college menu
 //
 
 function showCollegeMenu()
@@ -24,11 +16,6 @@ function showCollegeMenu()
 
  	document.body.appendChild(menu);
 
-	return false;
-}
-
-function hideCollegeMenu() 
-{
 	return false;
 }
 
@@ -46,7 +33,7 @@ function sharedNavBar()
 	//	Show the StudentsFirst title
 	var title = document.createElement("span");
 	title.id = "students-first-nav-title";
-	title.innerText = "StudentsFirst";
+	title.innerText = nameAndVersion();
 
 	var name = collegeName();
 	var changeCollegeButton = document.createElement("span");

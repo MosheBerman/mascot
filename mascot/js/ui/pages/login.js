@@ -1,4 +1,11 @@
-
+/* 
+ *	login.js
+ *
+ *	Created by Moshe Berman on August 10, 2013
+ *
+ *	This script replaces the 
+ *
+ */
 
 function replaceBannerWithNewOne() 
 {
@@ -11,3 +18,5 @@ function loginMain()
 {
 	replaceBannerWithNewOne();
 }
+
+loginMain();
