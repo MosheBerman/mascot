@@ -16,6 +16,7 @@ var extensionID = "agcpnlpfdfbcimknkpnclcicmcomklpo";
 
 window.onload = function(){
 	main();
+	top.document.title = "StudentsFirst";	
 }
 
 //
@@ -23,10 +24,7 @@ window.onload = function(){
 //
 
 function main() 
-{
-
-	console.log("Loaded global JS file.");		
-	
+{	
 	wrapBodyWithWrapper();
 
 	try
@@ -37,8 +35,6 @@ function main()
 	{
 		console.log("Cannot run login main, as we're not on the login page.");
 	}
-
-	console.log("Executed global JS file.");	
 }
 
 //

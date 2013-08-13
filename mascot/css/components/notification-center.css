@@ -1,5 +1,10 @@
+/*
+ * The notification center UI for the landing page
+ */
+
 /* A global navbar for each school. */
 #students-first-notification-center {
+	font-size: 10pt;
 	background-color: #FACE01;
 	color: #ffffff;
 	font-size: 15pt;
