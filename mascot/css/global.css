@@ -58,9 +58,19 @@
 .navButton {
 	color: fff;
 	border: 1px solid #fff;
-	border-radius: 50px;
-	margin: -8px 5px;
+	border-radius: 8px;
+	margin: -8px 0;
 	padding: 8px;
+	text-decoration: none;
+}
+
+.underlineButton {
+	color: fff;
+	text-decoration: underline;
+}
+
+.borderless {
+	border:none !important;
 }
 
 .right {

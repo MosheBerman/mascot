@@ -43,6 +43,7 @@ function sharedNavBar()
 	navBar.id = "students-first-navbar";
 	navBar.setAttribute("class", "students-first-round-corner");
 
+	//	Show the StudentsFirst title
 	var title = document.createElement("span");
 	title.id = "students-first-nav-title";
 	title.innerText = "StudentsFirst";
@@ -50,6 +51,8 @@ function sharedNavBar()
 	var name = collegeName();
 	var changeCollegeButton = document.createElement("span");
 
+	//	Append the college name if we successfully 
+	//	retrieved it from local storage.
 	if(name) {
 		
 		title.innerText += ": " + name + " ";	
@@ -58,14 +61,23 @@ function sharedNavBar()
 		changeCollegeLink.setAttribute("href", "#");
 		changeCollegeLink.innerText = "(Change)";
 		changeCollegeLink.setAttribute("id", "students-first-change-college-link");
+		changeCollegeLink.setAttribute("class", "underlineButton");
 		
 		changeCollegeLink.addEventListener("click", showCollegeMenu);		
 
 		changeCollegeButton.appendChild(changeCollegeLink);
 	}
 
+	//	Create a logout button
+	var logoutButton = document.createElement("a");
+	logoutButton.setAttribute("href", logoutURL);
+	logoutButton.innerText = "Log Out";
+	logoutButton.setAttribute("id", "students-first-logout-link");
+	logoutButton.setAttribute("class", "underlineButton right");	
+
 	navBar.appendChild(title);
 	navBar.appendChild(changeCollegeButton);	
+	navBar.appendChild(logoutButton);
 
 	return navBar;
 }

@@ -18,6 +18,12 @@
 	z-index: 2;
 }
 
+/* Headers have bottom borders */
+#students-first-notification-center:hover .students-first-notication-center-header {
+	border-radius: 0;
+	text-decoration: underline;
+}
+
 /* Hovering over notification center opens it */
 #students-first-notification-center:hover {
 	height: 320px;
@@ -41,7 +47,7 @@
 	width: 790px;
 	padding: 5px;
 	text-align: left;
-	padding: 5px;
+	margin: 1px 0;
 	min-height: 15px;
 	opacity: 0.0;
 	transition: opacity 0.4s;		
@@ -62,9 +68,6 @@
 	border-radius: 2px;
 }
 
-/* Headers have bottom borders */
-#students-first-notification-center #students-first-notification-wrapper .students-first-notication-center-header {
-	border-radius: 0;
-	border: 1px #e9c001 solid;
+#students-first-notification-wrapper .students-first-notification-center-header {
+	border-bottom: 1px solid #e9c001;
 }
-

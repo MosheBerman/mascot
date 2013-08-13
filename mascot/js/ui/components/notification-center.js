@@ -13,7 +13,7 @@ function messageNode (message) {
 
 	if (message.charAt(message.length - 1) === ':' || message.indexOf("USERS") != -1) {
 		var nodeClass = messageNode.getAttribute("class");
-		nodeClass += " students-first-notification-header";
+		nodeClass = nodeClass + " " + "students-first-notification-center-header";
 		messageNode.setAttribute("class", nodeClass);
 	};
 
