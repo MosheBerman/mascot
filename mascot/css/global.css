@@ -15,3 +15,58 @@
 .students-first-round-corner {
 	border-radius: 15px;
 }
+
+/* The overlay should cover everything. */
+#students-first-modal-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin :0;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	z-index: 900;
+	text-align: center;
+	opacity: 1.0;
+}
+
+#students-first-modal-color {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	z-index: 901;
+	text-align: center;	
+	background-color: #000000;
+	opacity: 0.6;
+}
+
+.students-first-modal-window {
+	border: 1px solid #000000;
+	border-radius: 15px;
+}
+
+.navButton {
+	color: fff;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	margin: -8px 5px;
+	padding: 8px;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
