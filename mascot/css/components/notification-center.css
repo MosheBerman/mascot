@@ -11,7 +11,7 @@
 	border-bottom-right-radius: 8px;
 	border-bottom-left-radius: 8px;
 	height: 10px;
-	text-align:  center;
+	text-align: center;
 	width: 800px;
 	font-size: 13px;
 	transition: height 0.3s;
@@ -32,11 +32,6 @@
 #students-first-notification-center:hover #students-first-notification-wrapper {
 	height: 310;
 	overflow: auto;
-}
-
-/* Headers have bottom borders */
-#students-first-notification-center .students-first-notication-center-header {
-	border-bottom: 1px solid #e9c001;
 }
 
 /* Style the messages */
@@ -65,5 +60,11 @@
 	width: 50px;
 	background-color: #e9c001;
 	border-radius: 2px;
+}
+
+/* Headers have bottom borders */
+#students-first-notification-center #students-first-notification-wrapper .students-first-notication-center-header {
+	border-radius: 0;
+	border: 1px #e9c001 solid;
 }
 
