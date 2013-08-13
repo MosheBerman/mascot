@@ -1,0 +1,34 @@
+/* The wrapper window */
+#students-first-college-menu-wrapper {
+	position: absolute;
+	background-color: #ffffff;
+	width: 50%;
+	height: 50%;
+	top: 25%;
+	left: 25%;
+	z-index: 902;
+}
+
+/*  The title of the window */
+#students-first-college-menu-title {
+	background-color: #00aeef;
+	color: #ffffff;
+	font-size: 15pt;
+	margin: 15px 15px 0 15px;
+	padding: 15px;
+	height: 25px;
+}
+
+/* The select object which shows the colleges */
+#students-first-college-menu {
+	max-height: 70%;
+	height: 300px;
+	margin: 10px 15px 15px 15px;
+	width: 95%;
+}
+
+option {
+	font-size: 24px;
+	color: #00aeef;
+	height: 20px;
+}

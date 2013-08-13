@@ -8,3 +8,7 @@
 	min-width: 805px;
 	z-index: 3;
 }
+
+#students-first-navbar a, #students-first-navbar a:visited {
+	color: #ffffff;
+}

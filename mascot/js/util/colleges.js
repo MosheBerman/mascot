@@ -69,3 +69,31 @@ function collegeName ()
 
   	return collegeNameFromStorageID(storageID);
 }
+
+/*
+ *	Store a college ID as the current one
+ */
+
+ function saveCollegeIDToLocalStorage(collegeID) 
+ {
+
+ 	if(collegeIDs.indexOf(collegeID) == -1)
+ 	{
+ 		log("Can't save an unrecognized college ID.");
+ 		return;
+ 	};
+
+ 	localStorage["college"] = collegeID;
+ }
+
+ /* 
+  *		Return saved college ID from local storage
+  */
+
+  function savedCollegeID() 
+  {
+  	if(typeof(Storage)!=="undefined")
+  	{	
+  		return localStorage["college"];
+  	}
+  }
