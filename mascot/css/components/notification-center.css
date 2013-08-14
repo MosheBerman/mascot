@@ -4,6 +4,7 @@
 
 /* A global navbar for each school. */
 #students-first-notification-center {
+	position: relative;
 	font-size: 10pt;
 	background-color: #FACE01;
 	color: #ffffff;
@@ -19,8 +20,8 @@
 	text-align: center;
 	width: 800px;
 	font-size: 13px;
+	z-index: 999;	
 	transition: height 0.3s;
-	z-index: 2;
 }
 
 /* Headers have bottom borders */

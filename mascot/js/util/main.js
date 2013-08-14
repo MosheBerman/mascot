@@ -121,6 +121,18 @@ function setTitle()
 	document.title = nameAndVersion();
 }
 
+/* 
+ *	A function to append a class to 
+ *	a given DOM node.
+ */
+
+ function appendClassToNode(nodeToProcess, classToAdd) 
+ {
+ 	var classes = nodeToProcess.getAttribute("class");
+ 	classes += " " + classToAdd;
+ 	nodeToProcess.setAttribute("class", classes);
+ }
+
 //
 //	This function creates a big 
 //	green button with a given

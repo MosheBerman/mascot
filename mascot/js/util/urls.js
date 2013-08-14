@@ -35,3 +35,25 @@ var selfServiceURL = "https://hrsa.cunyfirst.cuny.edu/psc/cnyhcprd/EMPLOYEE/HRMS
 var studentCenterURL = "https://hrsa.cunyfirst.cuny.edu/psc/cnyhcprd/EMPLOYEE/HRMS/c/SA_LEARNER_SERVICES.SSS_STUDENT_CENTER.GBL?PORTALPARAM_PTCNAV=HC_SSS_STUDENT_CENTER&EOPP.SCNode=HRMS&EOPP.SCPortal=EMPLOYEE&EOPP.SCName=PT_PTPP_PORTAL_ROOT&EOPP.SCLabel=Self%20Service&EOPP.SCFName=CO_EMPLOYEE_SELF_SERVICE&EOPP.SCSecondary=true&EOPP.SCPTfname=CO_EMPLOYEE_SELF_SERVICE&FolderPath=PORTAL_ROOT_OBJECT.CO_EMPLOYEE_SELF_SERVICE.HC_SSS_STUDENT_CENTER&IsFolder=false&PortalActualURL=https%3a%2f%2fhrsa.cunyfirst.cuny.edu%2fpsc%2fcnyhcprd%2fEMPLOYEE%2fHRMS%2fc%2fSA_LEARNER_SERVICES.SSS_STUDENT_CENTER.GBL&PortalContentURL=https%3a%2f%2fhrsa.cunyfirst.cuny.edu%2fpsc%2fcnyhcprd%2fEMPLOYEE%2fHRMS%2fc%2fSA_LEARNER_SERVICES.SSS_STUDENT_CENTER.GBL&PortalContentProvider=HRMS&PortalCRefLabel=Student%20Center&PortalRegistryName=EMPLOYEE&PortalServletURI=https%3a%2f%2fhrsa.cunyfirst.cuny.edu%2fpsp%2fcnyhcprd%2f&PortalURI=https%3a%2f%2fhrsa.cunyfirst.cuny.edu%2fpsc%2fcnyhcprd%2f&PortalHostNode=HRMS&NoCrumbs=yes&PortalKeyStruct=yes";
 
 var knowledgeBaseURL = "http://radprod.cuny.edu:8080/portal/ss/index.jsp";
+
+/****
+ *	Academic Calendar Links
+ ****/
+
+var brooklynCalendarURL = "http://events.brooklyn.cuny.edu/cal/main/showMain.rdo";
+
+//	TODO: Get the other school's calendars.
+var calendarURLs = {"BKL" : brooklynCalendarURL};
+
+/****
+ *	Research Professor Links
+ ****/
+
+ var researchURL = "http://ratemyprofessor.com";
+
+ /****
+  *	Miscellaneous links
+  ****/
+
+  var mosheURL = "http://mosheberman.com";
+

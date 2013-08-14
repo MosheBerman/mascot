@@ -1,3 +1,20 @@
+/*
+ *	global.css
+ *
+ *	Created by Moshe Berman on August 10, 2013
+ *
+ *	Defines global style rules for
+ * 	StudentsFirst. Here are some of the primary
+ *	colors used throughout the project.
+ *
+ *	Blue: #00aeef
+ *	Green: #2dac00
+ *	Green: #34c800 (hover)
+ *	Yellow: #FACE01
+ *	
+ *
+ */
+
 /* All body tags need to be reset. */
 body {
 	background: white !important;

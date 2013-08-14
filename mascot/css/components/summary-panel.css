@@ -1,0 +1,60 @@
+/*
+ *	The summary panel in the landing page
+ */
+
+/*
+ *	The body of the panel itself
+ */
+#students-first-summary-panel {
+	display: block;
+	width: 280px;
+	border: 3px solid #00aeef;
+	margin: 10px;
+	padding: 15px 0;
+	float: left;
+}
+
+/* Each section in the panel */
+.students-first-summary-panel-widget {
+	border-top: 1px solid #00aeef;
+	border-bottom: 1px solid #00aeef;
+	margin: 0;
+	margin-bottom: -1px;
+	padding: 10px 5px;
+	width: 270px;
+	text-align: left;	
+	color: #00aeef;
+}
+
+/* Widget headers */
+.students-first-widget-title {
+	font-weight: bold;
+	margin-bottom: 5px;
+	font-size: 18px;	
+}
+
+/* The widget's textual contents */
+.students-first-widget-subtitle {
+	font-size: 14px;
+}
+
+/* Widget links */
+.students-first-widget-link {
+	font-weight: bold;
+	color: #00aeef;
+	text-decoration: none;
+}
+
+.students-first-widget-link:visited {
+	color: #00aeef;
+}
+
+.students-first-widget-link:hover {
+	color: #11bfff;
+}
+
+/* Link widget arrows */
+.students-first-widget-arrow {
+	padding: 0 5px;
+	float: right;
+}

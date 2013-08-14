@@ -1,7 +1,7 @@
 {
 	"manifest_version" : 2,	
 	"name" : "StudentsFirst",		
-	"version" : "0.6.1",	
+	"version" : "0.6.2",	
 
 	"icons": { "16": "icon-16.png",
     	       "48": "icon-48.png",
@@ -12,8 +12,8 @@
 	"content_scripts" : [
 	{
 		"matches" : ["*://*.cunyfirst.cuny.edu/*"],
-		"css" : ["css/global.css", "css/components/college-menu.css", "css/components/navigation-bar.css", "css/components/notification-center.css"],
-		"js" : ["js/util/urls.js","js/util/colleges.js", "js/ui/components/college-menu.js", "js/util/main.js", "js/util/logger.js", "js/ui/components/navigation-bar.js", "js/ui/components/notification-center.js"]
+		"css" : ["css/global.css", "css/components/college-menu.css", "css/components/navigation-bar.css", "css/components/notification-center.css", "css/components/summary-panel.css"],
+		"js" : ["js/util/phone-numbers.js", "js/util/urls.js","js/util/colleges.js", "js/ui/components/college-menu.js", "js/util/main.js", "js/util/logger.js", "js/ui/components/navigation-bar.js", "js/ui/components/notification-center.js", "js/ui/components/summary-panel.js"]
 		},
 		{
 			"matches" : ["*://*.cunyfirst.cuny.edu/psp/cnyepprd/EMPLOYEE/EMPL/h/*"],

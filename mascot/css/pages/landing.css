@@ -1,3 +1,40 @@
-#wrapper {
-	font-family: "Avenir";
+/*
+ *	The CSS for the landing page
+ */
+
+/* 	This wrapper contains 
+ *	everything beneath the
+ *	notification center, and
+ *	maintains position when
+ *	the notification center is
+ *	open.
+ */
+#students-first-content-wrapper {
+	position: absolute;
+	top: 85px;
+	min-width: 800px;
+	width: 960px;	
+	margin: 0 auto;
+	padding: 0;	
+	text-align: center;
+}
+
+/* The wrapper around the green buttons */
+
+#students-first-button-wrapper {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0 5px;
+	width: 650px;
+	text-align: right;
+}
+
+/* The wrapper around the righthand panel. */
+#students-first-summary-panel-wrapper {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 300px;
 }
