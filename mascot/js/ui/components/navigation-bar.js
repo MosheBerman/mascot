@@ -27,8 +27,8 @@ function sharedNavBar()
 {
 
  	var navBar = document.createElement("div");
-	navBar.id = "students-first-navbar";
-	navBar.setAttribute("class", "students-first-round-corner");
+	navBar.setAttribute("id", "students-first-navbar");
+	navBar.setAttribute("class", "students-first-round-corner students-first-blue-bar");
 
 	//	Show the StudentsFirst title
 	var title = document.createElement("span");

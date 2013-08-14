@@ -1,3 +1,37 @@
-#wrapper{
-	font-family: "Avenir";
-} 
+#wrapper {
+	text-align: center;	
+}
+
+/*
+ *	Size up the form a bit
+ */
+
+#students-first-login-form {
+	margin: 15px auto;
+	padding: 5px 15px;
+	width: 620px;
+}
+
+/* 
+ *	Style the header
+ */
+
+#students-first-login-header {
+	color: #ffffff;
+	text-align: center;
+}
+
+#students-first-login-form input {
+	display: block;
+	width: auto;
+	margin: 10px;
+	height: 30px;
+	width: 600px;	
+}
+
+#students-first-login-form #submit {
+	width: 60px;
+	margin-right: 5px;
+	margin-left: auto;
+}
+

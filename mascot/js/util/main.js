@@ -64,7 +64,7 @@ window.onload = function(){
 
 
 //
-//
+//	The entry point of the script
 //
 
 function main() 
@@ -111,7 +111,7 @@ function preventPagesFromHijackingTheTitle()
 };
 
 //
-//
+//	Apply the document title
 //
 
 function setTitle() 
@@ -120,3 +120,30 @@ function setTitle()
 	window.document.title = nameAndVersion();	
 	document.title = nameAndVersion();
 }
+
+//
+//	This function creates a big 
+//	green button with a given
+//	title, subtitle, and href.
+//
+
+function bigGreenButton(title, subtitle, href)
+{
+	var button = document.createElement("a");
+	button.setAttribute("class", "students-first-round-corner students-first-big-green-button");
+	button.setAttribute("href", href);
+
+	var buttonTitle = document.createElement("span");
+	buttonTitle.setAttribute("class", "students-first-button-title");
+	buttonTitle.innerText = title;
+
+	var buttonSubtitle = document.createElement("span");
+	buttonSubtitle.setAttribute("class", "students-first-button-subtitle");
+	buttonSubtitle.innerText = subtitle;
+
+	button.appendChild(buttonTitle);
+	button.appendChild(buttonSubtitle);
+
+	return button;	
+}
+

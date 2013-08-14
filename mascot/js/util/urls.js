@@ -6,11 +6,29 @@
   *	URLs is a list of key URLs for various parts of CUNYFirst 
   */
 
+/****
+ *	General Login / Logout URLs
+ ****/
+
 var logoutURL = "https://home.cunyfirst.cuny.edu/psp/cnyepprd/EMPLOYEE/EMPL/?cmd=logout";
 
 var logoutLandingPageURL = "https://home.cunyfirst.cuny.edu/oam/logout.html";
 
 var loginURL = "https://home.cunyfirst.cuny.edu/oam/Portal_Login1.html";
+
+/****
+ *	Account Settings URLs
+ ****/
+
+ var forgotPasswordURL = "https://impweb.cuny.edu/selfservice/forgotpwd/start.action";
+
+ var changePasswordURL = "https://impweb.cuny.edu/selfservice/changepwd/start.action";
+
+ var firstTimeUsersURL = "https://impweb.cuny.edu/selfservice/activation/start.action";
+
+/****
+ *	Landing page URLS
+ ****/
 
 var selfServiceURL = "https://hrsa.cunyfirst.cuny.edu/psc/cnyhcprd/EMPLOYEE/HRMS/s/WEBLIB_PTPP_SC.HOMEPAGE.FieldFormula.IScript_AppHP?scname=PT_PTPP_PORTAL_ROOT&secondary=true&fname=CO_EMPLOYEE_SELF_SERVICE&pt_fname=CO_EMPLOYEE_SELF_SERVICE&PortalCacheContent=true&PSCache-Control=role%2cmax-age%3d60&FolderPath=PORTAL_ROOT_OBJECT.CO_EMPLOYEE_SELF_SERVICE&IsFolder=true";
 

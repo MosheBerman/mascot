@@ -41,32 +41,6 @@ function pullContentFromPanels()
 }
 
 //
-//	This function creates a big 
-//	green button with a given
-//	title, subtitle, and href.
-//
-
-function bigGreenButton(title, subtitle, href)
-{
-	var button = document.createElement("a");
-	button.setAttribute("class", "students-first-round-corner students-first-big-green-button");
-	button.setAttribute("href", href);
-
-	var buttonTitle = document.createElement("span");
-	buttonTitle.setAttribute("class", "students-first-button-title");
-	buttonTitle.innerText = title;
-
-	var buttonSubtitle = document.createElement("span");
-	buttonSubtitle.setAttribute("class", "students-first-button-subtitle");
-	buttonSubtitle.innerText = subtitle;
-
-	button.appendChild(buttonTitle);
-	button.appendChild(buttonSubtitle);
-
-	return button;	
-}
-
-//
 //	This function adds a button to
 //	take students to the self-service
 //	menu. From there, they're pretty 
@@ -105,13 +79,13 @@ function knowledgeBaseButton()
 function renderNewPanels() 
 {
 
-	//	A wrapper
-	var wrapper = document.createElement("div");
-	wrapper.id = "students-first-wrapper";
-
 	//	A navbar		
 	var navBar = sharedNavBar();
 	var notificationCenter = sharedNotificationCenter();
+
+	//	A wrapper
+	var wrapper = document.createElement("div");
+	wrapper.id = "students-first-wrapper";
 
 	//	Remove child node
 	while(document.body.childNodes.length > 0) {
