@@ -57,3 +57,5 @@ var calendarURLs = {"BKL" : brooklynCalendarURL};
 
   var mosheURL = "http://mosheberman.com";
 
+  var extensionURL = "https://chrome.google.com/webstore/detail/studentsfirst/bmoppdfdfmodkmpfjfodmeicmdnhnolb";
+

@@ -3,7 +3,7 @@ x BMC - Borough of Manhattan CC
 x BCC - Bronx Community College
 J BKL - Brooklyn College
 G LAW - CUNY School of Law
-x CTY - City College
+x CTY - City College - NYT 
 J CSI - College of Staten Island
 J HOS - Hostos Community College
 x HTR - Hunter College

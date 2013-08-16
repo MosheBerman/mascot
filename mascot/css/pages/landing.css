@@ -13,10 +13,16 @@
 	position: absolute;
 	top: 85px;
 	min-width: 800px;
-	width: 960px;	
+	width: 100%;	
 	margin: 0 auto;
 	padding: 0;	
 	text-align: center;
+}
+
+/* Center the content in the wrapper */
+#students-first-content-wrapper-center {
+	margin: 0 auto;
+	width: 960px;
 }
 
 /* The wrapper around the green buttons */

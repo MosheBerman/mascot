@@ -115,6 +115,10 @@ function renderNewPanels()
 	var contentWrapper = document.createElement("div");
 	contentWrapper.setAttribute("id", "students-first-content-wrapper");
 
+	//	A wrapper to center the two content panels
+	var contentCenteringWrapper = document.createElement("div");
+	contentCenteringWrapper.setAttribute("id", "students-first-content-wrapper-center");
+
 	//	A wrapper for the buttons
 	var buttonWrapper = document.createElement("div");
 	buttonWrapper.setAttribute("id", "students-first-button-wrapper");
@@ -137,8 +141,10 @@ function renderNewPanels()
 	buttonWrapper.appendChild(_knowledgeBaseButton);
 
 	//	Put the buttonWrapper and sideBarWrapper into the contentWrapper
-	contentWrapper.appendChild(infoPanelWrapper);	
-	contentWrapper.appendChild(buttonWrapper);
+	contentCenteringWrapper.appendChild(infoPanelWrapper);	
+	contentCenteringWrapper.appendChild(buttonWrapper);
+
+	contentWrapper.appendChild(contentCenteringWrapper);
 	
 
 	//	Create a wrapper for the entire page

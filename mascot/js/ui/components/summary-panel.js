@@ -109,6 +109,44 @@ function widgetLink(text, href)
     return widget;    
   }
 
+/*
+ *  Creates a mailto link for sharing
+ *
+ */
+
+function shareEmailContents()
+{
+
+  var subject = encodeURIComponent("Something to help you with school.");
+  var body = "Hey, \nIf you've been having trouble using CUNYFirst this might help. Check out a new Chrome extension called StudentsFirst. \n\nYou can get it here:\n\n " + extensionURL + "\n\nGood luck!";
+
+  body = encodeURIComponent(body);
+
+  var mailingURL = "mailto:?&subject=" + subject + "&body=" + body;
+
+  return mailingURL;
+}
+
+/*
+ *  Creates a mailto link for feedback
+ *
+ */
+
+
+function feedbackEmailContents()
+{
+
+  var subject = encodeURIComponent(nameAndVersion() + " Feedback");
+  var body = "Hey Moshe, \n\nI've got some feedback about StudentsFirst:\n\n";
+
+  body = encodeURIComponent(body);
+
+  var mailingURL = "mailto:moshberm@gmail.com?&subject=" + subject + "&body=" + body;
+
+  return mailingURL;
+} 
+
+
 /* 
  *	Create and returna fully configured summary panel
  */
@@ -135,7 +173,8 @@ function sharedSummaryPanel()
   //  Link widgets
   var academicCalendarWidget = linkSummaryWidget("Academic Calendar", brooklynCalendarURL);
   var researchWidget = linkSummaryWidget("Research A Professor", researchURL);  //  TODO: Change per school
-  var mosheBermanWidget = linkSummaryWidget("More By Moshe Berman", mosheURL);
+  var shareWidget = linkSummaryWidget("Share StudentsFirst", shareEmailContents());
+  var feedbackWidget = linkSummaryWidget("Feedback & Support", feedbackEmailContents());
 
   /*
    *  Install the widgets in the panel
@@ -147,7 +186,8 @@ function sharedSummaryPanel()
   panel.appendChild(finalExamsWidget);
   panel.appendChild(academicCalendarWidget);
   panel.appendChild(researchWidget);
-  panel.appendChild(mosheBermanWidget); 
+  panel.appendChild(shareWidget);
+  panel.appendChild(feedbackWidget);
 
 	return panel;
 }

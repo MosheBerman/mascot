@@ -20,7 +20,7 @@
 	text-align: center;
 	width: 800px;
 	font-size: 13px;
-	z-index: 999;	
+	z-index: 899;	/*	Below the modal layer, above all else */
 	transition: height 0.3s;
 }
 
