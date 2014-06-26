@@ -17,6 +17,7 @@ Who Made This?
 Mascot was made by Moshe Berman and Isaac Friedman.
 
 Isaac: [GitHub](https://github.com/isaac-friedman) [LinkedIn](https://www.linkedin.com/pub/isaac-friedman/63/a2/b95)
+
 Moshe: [GitHub](http://github.com/mosheberman) [LinkedIn](https://www.linkedin.com/profile/view?id=93781288) [Twitter](http://twitter.com/bermaniastudios)
 
 
