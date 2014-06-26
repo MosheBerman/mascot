@@ -10,3 +10,7 @@ Mascot [is available on the Chrome App Store](https://chrome.google.com/webstore
 Known Bugs:
 ---
 One of the recent CUNYFirst updates broke the login page in 0.5.1. The workaround is to disable the extension when logging in, and then enabling it after logging in.
+
+License:
+---
+&copy; Copyright 2014  Moshe Berman and Isaac Friedman.
